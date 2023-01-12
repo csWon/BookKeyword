@@ -1,0 +1,212 @@
+DEBUG:root:timeStamp : 2023-01-03 22:57:02
+DEBUG:selenium.webdriver.common.service:driver not found in PATH, trying Selenium Manager
+DEBUG:selenium.webdriver.common.selenium_manager:Executing: C:\Users\c.won\PycharmProjects\BookKeyword\venv\lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome
+DEBUG:selenium.webdriver.common.selenium_manager:Using driver at: C:\Users\c.won\.cache\selenium\chromedriver\win32\108.0.5359.71\chromedriver.exe
+DEBUG:selenium.webdriver.common.service:Started executable: `chromedriver` in a child process with pid: 54464
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:11073/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--proxy-server=122.99.194.236:20970", "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:107.0) Gecko/20100101 Firefox/107.0"]}}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11073
+DEBUG:urllib3.connectionpool:http://localhost:11073 "POST /session HTTP/1.1" 200 792
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.125","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\c.won\\AppData\\Local\\Temp\\scoped_dir54464_1801703587"},"goog:chromeOptions":{"debuggerAddress":"localhost:11079"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"cbd4b2d33e1339cf4960cbdc4b97378a"}} | headers=HTTPHeaderDict({'Content-Length': '792', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/timeouts {"implicit": 5000}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "POST /session/cbd4b2d33e1339cf4960cbdc4b97378a/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:cycle : 1
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/title {}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "GET /session/cbd4b2d33e1339cf4960cbdc4b97378a/title HTTP/1.1" 200 12
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/url {}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "GET /session/cbd4b2d33e1339cf4960cbdc4b97378a/url HTTP/1.1" 200 18
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"data:,"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:data:,
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/url {"url": "https://product.kyobobook.co.kr/"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "POST /session/cbd4b2d33e1339cf4960cbdc4b97378a/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:start kyobo
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element {"using": "xpath", "value": "//*[@id=\"welcome_header_wrap\"]/div[2]/nav/ul[1]/li[1]/a"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "POST /session/cbd4b2d33e1339cf4960cbdc4b97378a/element HTTP/1.1" 200 88
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"2c014c20-1990-4a5d-a698-32be2ac3b7ca"}} | headers=HTTPHeaderDict({'Content-Length': '88', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element/2c014c20-1990-4a5d-a698-32be2ac3b7ca/click {"id": "2c014c20-1990-4a5d-a698-32be2ac3b7ca"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "POST /session/cbd4b2d33e1339cf4960cbdc4b97378a/element/2c014c20-1990-4a5d-a698-32be2ac3b7ca/click HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/elements {"using": "css selector", "value": ".prod_info"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "POST /session/cbd4b2d33e1339cf4960cbdc4b97378a/elements HTTP/1.1" 200 1591
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"c7ec8b69-8eab-43ed-96a4-f5cd2d399b00"},{"element-6066-11e4-a52e-4f735466cecf":"b7982dec-df7c-4116-b29a-614073be1d56"},{"element-6066-11e4-a52e-4f735466cecf":"20747d1a-d365-4a21-b7b3-27067263bed7"},{"element-6066-11e4-a52e-4f735466cecf":"f8942e60-81fd-491d-86a4-17b5183aa3c8"},{"element-6066-11e4-a52e-4f735466cecf":"1a5e5a5b-15ad-47d8-a435-f2a9c30e4f1e"},{"element-6066-11e4-a52e-4f735466cecf":"0b2dd136-a16f-472a-875d-afb83df57c73"},{"element-6066-11e4-a52e-4f735466cecf":"c9febf26-0e71-42fe-8096-24351efab4bf"},{"element-6066-11e4-a52e-4f735466cecf":"0dfa847e-380a-4726-8c59-07ccaf5e0efb"},{"element-6066-11e4-a52e-4f735466cecf":"13cbefcf-d73d-4d7a-ad09-98c0a3786b4c"},{"element-6066-11e4-a52e-4f735466cecf":"f08b41e6-2208-4752-b9f8-5dfcc48ca674"},{"element-6066-11e4-a52e-4f735466cecf":"40f314ee-f8c4-42bf-b44a-97617f2777ea"},{"element-6066-11e4-a52e-4f735466cecf":"5b4915ee-075e-41d1-ba53-c0df08a00d3c"},{"element-6066-11e4-a52e-4f735466cecf":"079880a5-db93-4344-a558-b1e9db8a945f"},{"element-6066-11e4-a52e-4f735466cecf":"e1376aa2-5234-4d67-b6f4-0f5b307db638"},{"element-6066-11e4-a52e-4f735466cecf":"f78471bc-2e64-454f-b494-1cf7bd8442f3"},{"element-6066-11e4-a52e-4f735466cecf":"706606cc-0c5e-4d6a-a06a-6a88595b6fdc"},{"element-6066-11e4-a52e-4f735466cecf":"cd3c1ad0-1fc8-4dfa-8387-29d86eaf7bb2"},{"element-6066-11e4-a52e-4f735466cecf":"5d1de3fc-929b-4d14-a7dd-5c8975c5bd19"},{"element-6066-11e4-a52e-4f735466cecf":"04d39fd8-8f20-4ff0-afd1-a7ce2b74e4e0"},{"element-6066-11e4-a52e-4f735466cecf":"8a131d95-b371-45bb-a950-e30d9d54f910"}]} | headers=HTTPHeaderDict({'Content-Length': '1591', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element/c7ec8b69-8eab-43ed-96a4-f5cd2d399b00/text {"id": "c7ec8b69-8eab-43ed-96a4-f5cd2d399b00"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "GET /session/cbd4b2d33e1339cf4960cbdc4b97378a/element/c7ec8b69-8eab-43ed-96a4-f5cd2d399b00/text HTTP/1.1" 200 36
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"트렌드 코리아 2023"} | headers=HTTPHeaderDict({'Content-Length': '36', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:트렌드 코리아 2023
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element/c7ec8b69-8eab-43ed-96a4-f5cd2d399b00/text {"id": "c7ec8b69-8eab-43ed-96a4-f5cd2d399b00"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "GET /session/cbd4b2d33e1339cf4960cbdc4b97378a/element/c7ec8b69-8eab-43ed-96a4-f5cd2d399b00/text HTTP/1.1" 200 36
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"트렌드 코리아 2023"} | headers=HTTPHeaderDict({'Content-Length': '36', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element/b7982dec-df7c-4116-b29a-614073be1d56/text {"id": "b7982dec-df7c-4116-b29a-614073be1d56"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "GET /session/cbd4b2d33e1339cf4960cbdc4b97378a/element/b7982dec-df7c-4116-b29a-614073be1d56/text HTTP/1.1" 200 90
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"만일 내가 인생을 다시 산다면(10만 부 기념 스페셜 에디션)"} | headers=HTTPHeaderDict({'Content-Length': '90', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:만일 내가 인생을 다시 산다면(10만 부 기념 스페셜 에디션)
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element/b7982dec-df7c-4116-b29a-614073be1d56/text {"id": "b7982dec-df7c-4116-b29a-614073be1d56"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "GET /session/cbd4b2d33e1339cf4960cbdc4b97378a/element/b7982dec-df7c-4116-b29a-614073be1d56/text HTTP/1.1" 200 90
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"만일 내가 인생을 다시 산다면(10만 부 기념 스페셜 에디션)"} | headers=HTTPHeaderDict({'Content-Length': '90', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element/20747d1a-d365-4a21-b7b3-27067263bed7/text {"id": "20747d1a-d365-4a21-b7b3-27067263bed7"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "GET /session/cbd4b2d33e1339cf4960cbdc4b97378a/element/20747d1a-d365-4a21-b7b3-27067263bed7/text HTTP/1.1" 200 58
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"윤혜정의 개념의 나비효과 입문 편"} | headers=HTTPHeaderDict({'Content-Length': '58', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:윤혜정의 개념의 나비효과 입문 편
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element/20747d1a-d365-4a21-b7b3-27067263bed7/text {"id": "20747d1a-d365-4a21-b7b3-27067263bed7"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "GET /session/cbd4b2d33e1339cf4960cbdc4b97378a/element/20747d1a-d365-4a21-b7b3-27067263bed7/text HTTP/1.1" 200 58
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"윤혜정의 개념의 나비효과 입문 편"} | headers=HTTPHeaderDict({'Content-Length': '58', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element/f8942e60-81fd-491d-86a4-17b5183aa3c8/text {"id": "f8942e60-81fd-491d-86a4-17b5183aa3c8"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "GET /session/cbd4b2d33e1339cf4960cbdc4b97378a/element/f8942e60-81fd-491d-86a4-17b5183aa3c8/text HTTP/1.1" 200 70
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"한 권으로 끝내는 해커스 토익 700+ (LC+RC+VOCA)"} | headers=HTTPHeaderDict({'Content-Length': '70', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:한 권으로 끝내는 해커스 토익 700+ (LC+RC+VOCA)
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element/f8942e60-81fd-491d-86a4-17b5183aa3c8/text {"id": "f8942e60-81fd-491d-86a4-17b5183aa3c8"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "GET /session/cbd4b2d33e1339cf4960cbdc4b97378a/element/f8942e60-81fd-491d-86a4-17b5183aa3c8/text HTTP/1.1" 200 70
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"한 권으로 끝내는 해커스 토익 700+ (LC+RC+VOCA)"} | headers=HTTPHeaderDict({'Content-Length': '70', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element/1a5e5a5b-15ad-47d8-a435-f2a9c30e4f1e/text {"id": "1a5e5a5b-15ad-47d8-a435-f2a9c30e4f1e"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "GET /session/cbd4b2d33e1339cf4960cbdc4b97378a/element/1a5e5a5b-15ad-47d8-a435-f2a9c30e4f1e/text HTTP/1.1" 200 54
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"원씽(The One Thing)(리커버 특별판)"} | headers=HTTPHeaderDict({'Content-Length': '54', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:원씽(The One Thing)(리커버 특별판)
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element/1a5e5a5b-15ad-47d8-a435-f2a9c30e4f1e/text {"id": "1a5e5a5b-15ad-47d8-a435-f2a9c30e4f1e"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "GET /session/cbd4b2d33e1339cf4960cbdc4b97378a/element/1a5e5a5b-15ad-47d8-a435-f2a9c30e4f1e/text HTTP/1.1" 200 54
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"원씽(The One Thing)(리커버 특별판)"} | headers=HTTPHeaderDict({'Content-Length': '54', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element/0b2dd136-a16f-472a-875d-afb83df57c73/text {"id": "0b2dd136-a16f-472a-875d-afb83df57c73"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "GET /session/cbd4b2d33e1339cf4960cbdc4b97378a/element/0b2dd136-a16f-472a-875d-afb83df57c73/text HTTP/1.1" 200 42
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"해커스 첫토익 LC+RC+VOCA"} | headers=HTTPHeaderDict({'Content-Length': '42', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:해커스 첫토익 LC+RC+VOCA
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element/0b2dd136-a16f-472a-875d-afb83df57c73/text {"id": "0b2dd136-a16f-472a-875d-afb83df57c73"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "GET /session/cbd4b2d33e1339cf4960cbdc4b97378a/element/0b2dd136-a16f-472a-875d-afb83df57c73/text HTTP/1.1" 200 42
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"해커스 첫토익 LC+RC+VOCA"} | headers=HTTPHeaderDict({'Content-Length': '42', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element/c9febf26-0e71-42fe-8096-24351efab4bf/text {"id": "c9febf26-0e71-42fe-8096-24351efab4bf"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "GET /session/cbd4b2d33e1339cf4960cbdc4b97378a/element/c9febf26-0e71-42fe-8096-24351efab4bf/text HTTP/1.1" 200 51
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"EBS 윤혜정의 개념의 나비효과"} | headers=HTTPHeaderDict({'Content-Length': '51', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:EBS 윤혜정의 개념의 나비효과
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element/c9febf26-0e71-42fe-8096-24351efab4bf/text {"id": "c9febf26-0e71-42fe-8096-24351efab4bf"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "GET /session/cbd4b2d33e1339cf4960cbdc4b97378a/element/c9febf26-0e71-42fe-8096-24351efab4bf/text HTTP/1.1" 200 51
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"EBS 윤혜정의 개념의 나비효과"} | headers=HTTPHeaderDict({'Content-Length': '51', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element/0dfa847e-380a-4726-8c59-07ccaf5e0efb/text {"id": "0dfa847e-380a-4726-8c59-07ccaf5e0efb"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "GET /session/cbd4b2d33e1339cf4960cbdc4b97378a/element/0dfa847e-380a-4726-8c59-07ccaf5e0efb/text HTTP/1.1" 200 65
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"불편한 편의점(40만부 기념 벚꽃 에디션)"} | headers=HTTPHeaderDict({'Content-Length': '65', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:불편한 편의점(40만부 기념 벚꽃 에디션)
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element/0dfa847e-380a-4726-8c59-07ccaf5e0efb/text {"id": "0dfa847e-380a-4726-8c59-07ccaf5e0efb"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "GET /session/cbd4b2d33e1339cf4960cbdc4b97378a/element/0dfa847e-380a-4726-8c59-07ccaf5e0efb/text HTTP/1.1" 200 65
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"불편한 편의점(40만부 기념 벚꽃 에디션)"} | headers=HTTPHeaderDict({'Content-Length': '65', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element/13cbefcf-d73d-4d7a-ad09-98c0a3786b4c/text {"id": "13cbefcf-d73d-4d7a-ad09-98c0a3786b4c"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "GET /session/cbd4b2d33e1339cf4960cbdc4b97378a/element/13cbefcf-d73d-4d7a-ad09-98c0a3786b4c/text HTTP/1.1" 200 37
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"아버지의 해방일지"} | headers=HTTPHeaderDict({'Content-Length': '37', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:아버지의 해방일지
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element/13cbefcf-d73d-4d7a-ad09-98c0a3786b4c/text {"id": "13cbefcf-d73d-4d7a-ad09-98c0a3786b4c"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "GET /session/cbd4b2d33e1339cf4960cbdc4b97378a/element/13cbefcf-d73d-4d7a-ad09-98c0a3786b4c/text HTTP/1.1" 200 37
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"아버지의 해방일지"} | headers=HTTPHeaderDict({'Content-Length': '37', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element/f08b41e6-2208-4752-b9f8-5dfcc48ca674/text {"id": "f08b41e6-2208-4752-b9f8-5dfcc48ca674"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "GET /session/cbd4b2d33e1339cf4960cbdc4b97378a/element/f08b41e6-2208-4752-b9f8-5dfcc48ca674/text HTTP/1.1" 200 52
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"The Scent of PAGE : 룸스프레이 60ml"} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:The Scent of PAGE : 룸스프레이 60ml
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element/f08b41e6-2208-4752-b9f8-5dfcc48ca674/text {"id": "f08b41e6-2208-4752-b9f8-5dfcc48ca674"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "GET /session/cbd4b2d33e1339cf4960cbdc4b97378a/element/f08b41e6-2208-4752-b9f8-5dfcc48ca674/text HTTP/1.1" 200 52
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"The Scent of PAGE : 룸스프레이 60ml"} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element/40f314ee-f8c4-42bf-b44a-97617f2777ea/text {"id": "40f314ee-f8c4-42bf-b44a-97617f2777ea"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "GET /session/cbd4b2d33e1339cf4960cbdc4b97378a/element/40f314ee-f8c4-42bf-b44a-97617f2777ea/text HTTP/1.1" 200 76
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"해커스 토익 기출보카 TOEIC VOCA(토익보카) 단어장"} | headers=HTTPHeaderDict({'Content-Length': '76', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:해커스 토익 기출보카 TOEIC VOCA(토익보카) 단어장
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element/40f314ee-f8c4-42bf-b44a-97617f2777ea/text {"id": "40f314ee-f8c4-42bf-b44a-97617f2777ea"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "GET /session/cbd4b2d33e1339cf4960cbdc4b97378a/element/40f314ee-f8c4-42bf-b44a-97617f2777ea/text HTTP/1.1" 200 76
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"해커스 토익 기출보카 TOEIC VOCA(토익보카) 단어장"} | headers=HTTPHeaderDict({'Content-Length': '76', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element/5b4915ee-075e-41d1-ba53-c0df08a00d3c/text {"id": "5b4915ee-075e-41d1-ba53-c0df08a00d3c"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "GET /session/cbd4b2d33e1339cf4960cbdc4b97378a/element/5b4915ee-075e-41d1-ba53-c0df08a00d3c/text HTTP/1.1" 200 78
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"ETS 토익 정기시험 기출문제집 1000 Vol 3 READING(리딩)"} | headers=HTTPHeaderDict({'Content-Length': '78', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:ETS 토익 정기시험 기출문제집 1000 Vol 3 READING(리딩)
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element/5b4915ee-075e-41d1-ba53-c0df08a00d3c/text {"id": "5b4915ee-075e-41d1-ba53-c0df08a00d3c"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "GET /session/cbd4b2d33e1339cf4960cbdc4b97378a/element/5b4915ee-075e-41d1-ba53-c0df08a00d3c/text HTTP/1.1" 200 78
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"ETS 토익 정기시험 기출문제집 1000 Vol 3 READING(리딩)"} | headers=HTTPHeaderDict({'Content-Length': '78', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element/079880a5-db93-4344-a558-b1e9db8a945f/text {"id": "079880a5-db93-4344-a558-b1e9db8a945f"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "GET /session/cbd4b2d33e1339cf4960cbdc4b97378a/element/079880a5-db93-4344-a558-b1e9db8a945f/text HTTP/1.1" 200 83
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"ETS 토익 정기시험 기출문제집 1000 Vol 3 LISTENING(리스닝)"} | headers=HTTPHeaderDict({'Content-Length': '83', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:ETS 토익 정기시험 기출문제집 1000 Vol 3 LISTENING(리스닝)
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element/079880a5-db93-4344-a558-b1e9db8a945f/text {"id": "079880a5-db93-4344-a558-b1e9db8a945f"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "GET /session/cbd4b2d33e1339cf4960cbdc4b97378a/element/079880a5-db93-4344-a558-b1e9db8a945f/text HTTP/1.1" 200 83
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"ETS 토익 정기시험 기출문제집 1000 Vol 3 LISTENING(리스닝)"} | headers=HTTPHeaderDict({'Content-Length': '83', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element/e1376aa2-5234-4d67-b6f4-0f5b307db638/text {"id": "e1376aa2-5234-4d67-b6f4-0f5b307db638"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "GET /session/cbd4b2d33e1339cf4960cbdc4b97378a/element/e1376aa2-5234-4d67-b6f4-0f5b307db638/text HTTP/1.1" 200 66
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"내가 틀릴 수도 있습니다(화이트 에디션)"} | headers=HTTPHeaderDict({'Content-Length': '66', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:내가 틀릴 수도 있습니다(화이트 에디션)
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element/e1376aa2-5234-4d67-b6f4-0f5b307db638/text {"id": "e1376aa2-5234-4d67-b6f4-0f5b307db638"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "GET /session/cbd4b2d33e1339cf4960cbdc4b97378a/element/e1376aa2-5234-4d67-b6f4-0f5b307db638/text HTTP/1.1" 200 66
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"내가 틀릴 수도 있습니다(화이트 에디션)"} | headers=HTTPHeaderDict({'Content-Length': '66', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element/f78471bc-2e64-454f-b494-1cf7bd8442f3/text {"id": "f78471bc-2e64-454f-b494-1cf7bd8442f3"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "GET /session/cbd4b2d33e1339cf4960cbdc4b97378a/element/f78471bc-2e64-454f-b494-1cf7bd8442f3/text HTTP/1.1" 200 69
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"2023 해커스 토익 RC 리딩(Reading) 토익 기본서"} | headers=HTTPHeaderDict({'Content-Length': '69', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:2023 해커스 토익 RC 리딩(Reading) 토익 기본서
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element/f78471bc-2e64-454f-b494-1cf7bd8442f3/text {"id": "f78471bc-2e64-454f-b494-1cf7bd8442f3"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "GET /session/cbd4b2d33e1339cf4960cbdc4b97378a/element/f78471bc-2e64-454f-b494-1cf7bd8442f3/text HTTP/1.1" 200 69
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"2023 해커스 토익 RC 리딩(Reading) 토익 기본서"} | headers=HTTPHeaderDict({'Content-Length': '69', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element/706606cc-0c5e-4d6a-a06a-6a88595b6fdc/text {"id": "706606cc-0c5e-4d6a-a06a-6a88595b6fdc"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "GET /session/cbd4b2d33e1339cf4960cbdc4b97378a/element/706606cc-0c5e-4d6a-a06a-6a88595b6fdc/text HTTP/1.1" 200 74
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"2023 해커스 토익 LC 리스닝(Listening) 토익 기본서"} | headers=HTTPHeaderDict({'Content-Length': '74', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:2023 해커스 토익 LC 리스닝(Listening) 토익 기본서
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element/706606cc-0c5e-4d6a-a06a-6a88595b6fdc/text {"id": "706606cc-0c5e-4d6a-a06a-6a88595b6fdc"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "GET /session/cbd4b2d33e1339cf4960cbdc4b97378a/element/706606cc-0c5e-4d6a-a06a-6a88595b6fdc/text HTTP/1.1" 200 74
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"2023 해커스 토익 LC 리스닝(Listening) 토익 기본서"} | headers=HTTPHeaderDict({'Content-Length': '74', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element/cd3c1ad0-1fc8-4dfa-8387-29d86eaf7bb2/text {"id": "cd3c1ad0-1fc8-4dfa-8387-29d86eaf7bb2"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "GET /session/cbd4b2d33e1339cf4960cbdc4b97378a/element/cd3c1ad0-1fc8-4dfa-8387-29d86eaf7bb2/text HTTP/1.1" 200 55
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"나도 모르는 내 마음의 심리법칙"} | headers=HTTPHeaderDict({'Content-Length': '55', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:나도 모르는 내 마음의 심리법칙
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element/cd3c1ad0-1fc8-4dfa-8387-29d86eaf7bb2/text {"id": "cd3c1ad0-1fc8-4dfa-8387-29d86eaf7bb2"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "GET /session/cbd4b2d33e1339cf4960cbdc4b97378a/element/cd3c1ad0-1fc8-4dfa-8387-29d86eaf7bb2/text HTTP/1.1" 200 55
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"나도 모르는 내 마음의 심리법칙"} | headers=HTTPHeaderDict({'Content-Length': '55', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element/5d1de3fc-929b-4d14-a7dd-5c8975c5bd19/text {"id": "5d1de3fc-929b-4d14-a7dd-5c8975c5bd19"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "GET /session/cbd4b2d33e1339cf4960cbdc4b97378a/element/5d1de3fc-929b-4d14-a7dd-5c8975c5bd19/text HTTP/1.1" 200 47
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"물고기는 존재하지 않는다"} | headers=HTTPHeaderDict({'Content-Length': '47', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:물고기는 존재하지 않는다
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element/5d1de3fc-929b-4d14-a7dd-5c8975c5bd19/text {"id": "5d1de3fc-929b-4d14-a7dd-5c8975c5bd19"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "GET /session/cbd4b2d33e1339cf4960cbdc4b97378a/element/5d1de3fc-929b-4d14-a7dd-5c8975c5bd19/text HTTP/1.1" 200 47
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"물고기는 존재하지 않는다"} | headers=HTTPHeaderDict({'Content-Length': '47', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/actions {"actions": [{"type": "pointer", "parameters": {"pointerType": "mouse"}, "id": "mouse", "actions": [{"type": "pointerMove", "duration": 250, "x": 0, "y": 0, "origin": {"element-6066-11e4-a52e-4f735466cecf": "5d1de3fc-929b-4d14-a7dd-5c8975c5bd19"}}]}, {"type": "key", "id": "key", "actions": [{"type": "pause", "duration": 0}]}]}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "POST /session/cbd4b2d33e1339cf4960cbdc4b97378a/actions HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:11073/session/cbd4b2d33e1339cf4960cbdc4b97378a/element/cd3c1ad0-1fc8-4dfa-8387-29d86eaf7bb2/click {"id": "cd3c1ad0-1fc8-4dfa-8387-29d86eaf7bb2"}
+DEBUG:urllib3.connectionpool:http://localhost:11073 "POST /session/cbd4b2d33e1339cf4960cbdc4b97378a/element/cd3c1ad0-1fc8-4dfa-8387-29d86eaf7bb2/click HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
